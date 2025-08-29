@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/trackit?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+    username: root
+    password: meet2001
+  jpa:
+    hibernate:
+      ddl-auto: update   # dev only; switches schema automatically
+    show-sql: true       # dev only; prints SQL in console
+    open-in-view: false  # recommended for APIs
+server:
+  port: 8080
+
+logging:
+  level:
+    org.hibernate.SQL: debug   # optional: show SQL
