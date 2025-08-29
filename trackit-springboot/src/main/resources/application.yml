@@ -14,3 +14,4 @@ server:
 logging:
   level:
     org.hibernate.SQL: debug   # optional: show SQL
+    
